@@ -204,7 +204,7 @@ netsh(Network Shell) 是一个windows系统本身提供的功能强大的网络�
 ### Windows用户管理命令，黑客必知必会
 ```
 net user cody 123456 /add
-net user cody localgroup Administrators
+net localgroup Administrators cody /add
 net user cody /ACTIVE:YES
 net user cody 654321  :: 把cody的密码改为654321
 net user John /delete
